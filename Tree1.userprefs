@@ -1,0 +1,17 @@
+﻿<Properties>
+  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
+  <MonoDevelop.Ide.Workbench ActiveDocument="Assets\SquareTest2.cs">
+    <Files>
+      <File FileName="Assets\SquareTest2.cs" Line="16" Column="4" />
+    </Files>
+  </MonoDevelop.Ide.Workbench>
+  <MonoDevelop.Ide.DebuggingService.Breakpoints>
+    <BreakpointStore>
+      <Breakpoint file="C:\Users\OWNER_Co\Documents\GitHub\Tree1\Assets\Tree.cs" line="21" />
+      <Breakpoint file="C:\Users\OWNER_Co\Documents\GitHub\Tree1\Assets\Trees.cs" line="33" />
+    </BreakpointStore>
+  </MonoDevelop.Ide.DebuggingService.Breakpoints>
+  <MonoDevelop.Ide.DebuggingService.PinnedWatches>
+    <Watch file="Assets\SquareTest2.cs" line="27" offsetX="580" offsetY="262" expression="squareValue" liveUpdate="False" />
+  </MonoDevelop.Ide.DebuggingService.PinnedWatches>
+</Properties>
