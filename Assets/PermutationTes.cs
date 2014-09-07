@@ -7,7 +7,7 @@ public class PermutationTes : MonoBehaviour
 {
 		void Start ()
 		{
-				PermutationNumber (6, 3);
+				PermutationNumber (5, 4);
 		}
 
 		void PermutationNumber (int n, int r)
@@ -20,11 +20,9 @@ public class PermutationTes : MonoBehaviour
 		{
 				if (columns < r) {
 						columns++;
-						//forループの中で親の変数を書き換えていないか常に注意する事
 						for (int i = 0; i < n.Length; i++) {
-								string resumeClone = resume;		//forループの中で親が変更されないように新しく変数を作る（重要）
-								resumeClone += n [i].ToString () + ",";
-								int[] numClone = n.Where (x => x != n [i]).ToArray ();	//これも作る
+								string resumeClone = resume + n [i].ToString () + ",";
+								int[] numClone = n.Where (x => x != n [i]).ToArray ();
 								PermutationNest (numClone, r, columns, resumeClone);
 						}
 				} else {
