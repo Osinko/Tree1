@@ -163,7 +163,7 @@ public static class MathfUtils
 		/// <param name="n">全要素数</param>
 		/// <param name="r">選ぶ数</param>
 		/// <param name="strList">収納するstring型のリスト</param>
-		static void CombinationNumbers (int n, int r, List <string> strList)
+		public static void CombinationNumbers (int n, int r, List <string> strList)
 		{
 				int[] numbers = new int[r + 1];
 				CombinationNest (n, r, 1, 1, numbers, strList);
@@ -191,7 +191,7 @@ public static class MathfUtils
 		/// </summary>
 		/// <param name="n">全要素数</param>
 		/// <param name="r">選ぶ数</param>
-		public static float PermutationNum (int n, int r)
+		public static float Permutation (int n, int r)
 		{
 				return  Factor (n) / Factor (n - r);
 		}
@@ -202,7 +202,7 @@ public static class MathfUtils
 		/// </summary>
 		/// <param name="n">全要素数</param>
 		/// <param name="r">選ぶ数</param>
-		public static int CombinationNum (int n, int r)
+		public static int Combination (int n, int r)
 		{
 				return  Factor (n) / (Factor (n - r) * Factor (r));
 		}
@@ -333,7 +333,19 @@ public static class MathfUtils
 				return x * y / Gcd (x, y);
 		}
 
-	
+		/// <summary>
+		/// 配列の指定要素を入れ替えます
+		/// </summary>
+		/// <param name="array">Array.</param>
+		/// <param name="i">The index.</param>
+		/// <param name="j">J.</param>
+		public static void Swap<T> (T[] array, int i, int j)
+		{
+				T temp = array [i];
+				array [i] = array [j];
+				array [j] = temp;
+		}
+
 		/// <summary>
 		/// 値を入れ替えるジェネリック関数
 		/// </summary>
