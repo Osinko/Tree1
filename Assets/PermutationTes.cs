@@ -16,10 +16,12 @@ public class PermutationTes : MonoBehaviour
 		{
 				if (columns <= 2) {
 						columns++;
-						for (int i = 1; i < num.Length+1; i++) {
-								string resumeClone = "";
-								resumeClone += i.ToString ();
-								int[] numClone = num.Where (x => x != i).ToArray ();
+						for (int i = 0; i < num.Length; i++) {
+								string resumeClone = resume;
+								resumeClone += num [i].ToString ();
+								int[] numClone = num.Where (x => x != num [i]).ToArray ();
+								//print ("");
+								Method (columns, resumeClone, numClone);
 						}
 				}
 		}
