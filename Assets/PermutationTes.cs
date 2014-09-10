@@ -7,7 +7,7 @@ public class PermutationTes : MonoBehaviour
 {
 		void Start ()
 		{
-				PermutationNumber (5, 4);
+				PermutationNumber (5, 3);
 		}
 
 		void PermutationNumber (int n, int r)
